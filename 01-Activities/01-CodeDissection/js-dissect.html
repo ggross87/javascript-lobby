@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title> Data Types, User Input, Conditional Logic</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+  var userName = prompt("What's your name?");
+  var confirmSports = confirm("Do you like sports?");
+
+  var sportName = "BasketBall";
+  var favoriteAthlete = "LeBron James";
+  var championshipsWon = 3;
+  var hallOfFamer = true;
+
+  if (confirmSports) {
+    alert(sportName + " " + favoriteAthlete + " " + championshipsWon);
+  }
+  else {
+    alert("You don't deserve my player's information!");
+  }
+
+  if (hallOfFamer) {
+    alert("My favorite player is a Hall Of Famer!");
+  }
+  else {
+    alert("My favorite player is not a Hall Of Famer.:=(");
+  }
+
+  if (championshipsWon !== 3) {
+    alert("Your player hasn't won atleast 3 championships.");
+  }
+
+  if (championshipsWon === 3) {
+    alert("Your player may be in the conversation of greatness, let's talk stats.");
+  }
+  else if (championshipsWon < 3) {
+    alert("My favorite player can beat yours with his hands tied!");
+  }
+  else if (championshipsWon > 3){
+    alert("Your player may have more championships than mine, can your player average a triple double?")
+  }
+
+  document.write("Welcome to our page " + userName);
+
+  var championshipsWon = prompt("How many chapionships has you favorite player won?");
+
+  alert(championshipsWon + 3);
+
+  alert(parseInt(championshipsWon) + 3);
+  </script>
+</body>
+</html>
