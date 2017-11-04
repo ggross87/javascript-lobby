@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Conditional Demo</title>
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+
+    var confirmTopoChico = confirm("Do you like Topo Chico?");
+    var confirmCoffee = confirm("Do you like Coffee?");
+    var topoChicoType = prompt("What flavor of Topo Chico do you like?");
+    var coffeeType = prompt("Do you prefer creamer or no creamer?");
+
+    if (confirmTopoChico) {
+      alert("You like: " + topoChicoType + "!");
+    }
+    else if (confirmCoffee) {
+      alert("You like your coffee with: " + coffeeType)
+    }
+    else {
+      document.write("You don't like Topo Chico or Coffee? You can't be a programmer, sorry!")
+    }
+    
+    </script>
+  </body>
+</html>
