@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+  <title>Baby Conditonal Activity</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+  var babyConfirm = confirm("Do you have a baby?");
+
+  if (babyConfirm) {
+    document.write("You have a baby. I may have some tips for you on how to manage getting rest and taking care of the baby.");
+  }
+
+  else {
+    document.write("You don't have a baby so enjoy getting all the sleep you can! :P");
+  }
+
+  var sleepAvg = prompt("How many hours of sleep do you average a day?");
+
+  if (sleepAvg < 6) {
+    alert("Maybe you can sleep when the baby sleeps. Also try preparing everything the baby may need before the baby wakes.");
+  }
+  else if (sleepAvg > 6) {
+    alert("You don't need my help, you're doing great. Tell me your secret!");
+  }
+  else {
+    alert("Hmmm... Strange! Good day to you!")
+  }
+
+  </script>
+
+</body>
+</html>
